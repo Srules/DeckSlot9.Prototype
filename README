@@ -4,4 +4,4 @@ Known issues:
 A user has reported experiencing frequent pausing while loading deck.  Will add more details as reported.
 Turns out every time a card is loaded which includes a space the pause is being triggered.  
 
-Since this issue is only affecting a small sample size of users our fix for the time being will be implementing a config file to change hotkeys.
+Since this issue is only effecting a small sample size of users our fix for the time being will be implementing a config file to change hotkeys.
