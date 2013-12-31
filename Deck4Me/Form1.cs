@@ -184,7 +184,7 @@ namespace Deck4Me
             Console.WriteLine(args.Key.ToString());
             switch (args.Key.ToString())
             {
-                case "Space":
+                case "F4":
                     if (pauseExecution)
                     {
                         pauseExecution = false;
@@ -195,7 +195,7 @@ namespace Deck4Me
                     {
                         pauseExecution = true;
                         // MessageBox.Show("SPACE: Execution suspended. Press SPACE again to continue."); //too annoying
-                        toolStripStatusLabel1.Text = "Execution paused. Press SPACE to resume.";
+                        toolStripStatusLabel1.Text = "Execution paused. Press F4 to resume.";
                     }
                     break;
                 case "Escape":
