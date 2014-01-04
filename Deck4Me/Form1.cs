@@ -1277,7 +1277,19 @@ namespace Deck4Me
             }
 
             Deck newDeck = tempDeck;
-            newDeck.ExportToDotDeck();
+            bool exported = newDeck.ExportToDotDeck();
+
+            if (!exported)
+            {
+                //Reset for more decks
+                tempDeck = null;
+                statusIcon.Image = statusImages.Images[0];
+                toolStripComboBox1.Enabled = false;
+                toolStripTextBox1.Enabled = false;
+
+                return;
+            }
+
 
             ListViewItem item = new ListViewItem(Path.GetFileName(newDeck.filePath));
             item.Tag = newDeck.filePath;
@@ -1480,6 +1492,10 @@ namespace Deck4Me
                     statusIcon.Image = statusImages.Images[1];
                     toolStripComboBox1.Enabled = true;
                     toolStripTextBox1.Enabled = true;
+
+                    toolStripComboBox1.SelectedIndex = -1;
+                    toolStripTextBox1.Text = "Deck name";
+                    toolStripComboBox1.Focus();
                 }
                 else
                 {
@@ -1634,6 +1650,51 @@ namespace Deck4Me
 
         private void toolStripStatusLabel3_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void DeckView_Click(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void copyDeckListToClipboardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (lastSelectedDeck != null)
+            {
+                Deck selectedDeck = getDeck(lastSelectedDeck);
+                if(selectedDeck != null)
+                {
+                    Clipboard.SetText(cardArrayToString(selectedDeck));
+                }
+
+            }
+        }
+
+        private void DeckView_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                ListViewItem item = DeckView.GetItemAt(e.X, e.Y);
+                if (item != null)
+                {
+                    item.Selected = true;
+
+                    contextMenuStrip2.Show(Cursor.Position);
+                }
+             
+            }
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+            Point mousePosition = DeckView.PointToClient(Control.MousePosition);
+            ListViewItem item = DeckView.GetItemAt(mousePosition.X, mousePosition.Y);
+            if (item != null)
+            {
+                e.Cancel = true;
+            }
+            
 
         }
     }

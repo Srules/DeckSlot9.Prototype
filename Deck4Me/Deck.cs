@@ -170,7 +170,7 @@ namespace Deck4Me
             return false;
         }
 
-        public void ExportToDotDeck()
+        public Boolean ExportToDotDeck()
         {
             string xsdMarkup =
                 @"<xs:schema attributeFormDefault='unqualified' elementFormDefault='qualified' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
@@ -230,7 +230,13 @@ namespace Deck4Me
                 saveFileDialog1.InitialDirectory = Directory.GetParent(Application.StartupPath).Parent.FullName + @"\Sample .Deck files\";
                 saveFileDialog1.Filter = "deckFile|*.Deck";
                 saveFileDialog1.Title = "Save a Deck";
-                saveFileDialog1.ShowDialog();
+                saveFileDialog1.FileName = this.name;
+                DialogResult res = saveFileDialog1.ShowDialog();
+
+                if (res == DialogResult.Cancel)
+                {
+                    return false;
+                }
 
                 using (System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile())
                 {
@@ -241,8 +247,11 @@ namespace Deck4Me
                     filePath = fs.Name;
                     fileName = Path.GetFileName(filePath);
                 }
+
+                return true;
             }
 
+            return false;
         }
 
         public int getSecondaryQuantity(Card card)
