@@ -1,0 +1,99 @@
+<deck>
+  <deckName>SavjzPaladin</deckName>
+  <class>Paladin</class>
+  <card>
+    <cardName>Argent Squire</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Southsea Deckhand</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Equality</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Argent Protector</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Nat Pagle</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Sword of Justice</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Aldor Peacekeeper</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Harvest Golem</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Tinkmaster Overspark</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Truesilver Champion</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Consecration</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Defender of Argus</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Captain Greenskin</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Sylvanas Windrunner</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Avenging Wrath</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>The Black Knight</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Guardian of Kings</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Lay on Hands</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Tirion Fordring</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+</deck>

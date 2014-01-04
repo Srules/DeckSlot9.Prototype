@@ -1,0 +1,84 @@
+<deck>
+  <deckName>Basic Priest</deckName>
+  <class>Priest</class>
+  <card>
+    <cardName>Holy Smite</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Power Word: Shield</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Northshire Cleric</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Shadow Word: Pain</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Acidic Swamp Ooze</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Bloodfen Raptor</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Novice Engineer</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Shadow Word: Death</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Shattered Sun Cleric</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Chillwind Yeti</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Gnomish Inventor</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Sen'jin Shieldmasta</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Holy Nova</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Boulderfist Ogre</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Stormwind Champion</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Mind Control</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+</deck>

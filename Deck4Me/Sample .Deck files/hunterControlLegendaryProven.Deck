@@ -1,0 +1,94 @@
+<deck>
+  <deckName>HunterControl</deckName>
+  <class>Hunter</class>
+  <card>
+    <cardName>Deadly Shot</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Eaglehorn Bow</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Explosive Shot</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Explosive Trap</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Flare</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Freezing Trap</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Hunter’s Mark</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Tracking</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Abomination</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Arcane Golem</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Argent Commander</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Doomsayer</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Earthen Ring Farseer</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Leeroy Jenkins</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Loot Hoarder</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Novice Engineer</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>The Black Knight</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Wild Pyromancer</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+</deck>

@@ -1,0 +1,79 @@
+<deck>
+  <deckName>Basic Warlock</deckName>
+  <class>Warlock</class>
+  <card>
+    <cardName>Soulfire</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Mortal Coil</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Elven Archer</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Acidic Swamp Ooze</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Bluegill Warrior</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Novice Engineer</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Shadow Bolt</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Shattered Sun Cleric</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Hellfire</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Chillwind Yeti</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Gnomish Inventor</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Sen'jin Shieldmasta</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Boulderfist Ogre</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Dread Infernal</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Stormwind Champion</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+</deck>

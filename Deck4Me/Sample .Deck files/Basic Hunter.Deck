@@ -1,0 +1,79 @@
+<deck>
+  <deckName>Basic Hunter</deckName>
+  <class>Hunter</class>
+  <card>
+    <cardName>Arcane Shot</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Timber Wolf</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Bloodfen Raptor</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Bluegill Warrior</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>River Crocolisk</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Starving Buzzard</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Animal Companion</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Kill Command</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Razorfen Hunter</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Shattered Sun Cleric</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Wolfrider</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Multi-Shot</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Houndmaster</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Tundra Rhino</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Reckless Rocketeer</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+</deck>

@@ -1,0 +1,104 @@
+<deck>
+  <deckName>Power and Control</deckName>
+  <class>Druid</class>
+  <card>
+    <cardName>Innervate</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Claw</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Wrath</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Bloodmage Thalnos</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Nat Pagle</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Notice Engineer</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Healing Touch</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>1</secondaryQty>
+  </card>
+  <card>
+    <cardName>Big Game Hunter</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Harvest Golem</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>1</secondaryQty>
+  </card>
+  <card>
+    <cardName>Tinkmaster Overspark</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Swipe</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Keeper of the Grove</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Druid of the Claw</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Faceless Manipulator</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>1</secondaryQty>
+  </card>
+  <card>
+    <cardName>Sylvanas Windrunner</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Sunwalker</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>1</secondaryQty>
+  </card>
+  <card>
+    <cardName>The Black Knight</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Ancient of Lore</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Ancient of War</cardName>
+    <quantity>2</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+  <card>
+    <cardName>Ragnaros the Firelord</cardName>
+    <quantity>1</quantity>
+    <secondaryQty>0</secondaryQty>
+  </card>
+</deck>
