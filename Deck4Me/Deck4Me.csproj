@@ -31,6 +31,7 @@
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -41,6 +42,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -50,6 +52,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>514E4489EBC32B1CC8E21A0076742ACB5766CD1C</ManifestCertificateThumbprint>
@@ -93,6 +96,12 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Tesseract">
+      <HintPath>..\packages\Tesseract.1.0.7\lib\net45\Tesseract.dll</HintPath>
+    </Reference>
+    <Reference Include="tessnet2_32">
+      <HintPath>library\tessnet2_32.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="Xml.Schema.Linq, Version=2.0.2.56002, Culture=neutral, PublicKeyToken=47d0c84d0ebb13e5, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -106,13 +115,16 @@
   <ItemGroup>
     <Compile Include="Card.cs" />
     <Compile Include="Deck.cs" />
+    <Compile Include="FormattedConsoleLogger.cs" />
     <Compile Include="KeyboardListener.cs" />
+    <Compile Include="OCR.cs" />
     <Compile Include="Resources\AboutBox1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Resources\AboutBox1.Designer.cs">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ResultsPrinter.cs" />
     <Compile Include="VirtualMouse.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -139,6 +151,7 @@
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Deck4Me_TemporaryKey.pfx" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -163,6 +176,18 @@
     <Content Include="DeckImages\ShamanDeck.bmp" />
     <Content Include="DeckImages\WarlockDeck.bmp" />
     <Content Include="DeckImages\WarriorDeck.bmp" />
+    <Content Include="x64\liblept168.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\libtesseract302.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\liblept168.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\libtesseract302.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\statusGray.png" />
     <None Include="Resources\statusYellow.png" />
     <None Include="Resources\statusGreen.png" />

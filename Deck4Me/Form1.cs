@@ -24,7 +24,10 @@ using System.Reflection;
 using System.Threading;
 using Microsoft.VisualBasic;
 using System.Drawing.Drawing2D;
-
+using System.Diagnostics;
+using System.IO;
+using System.Text;
+using Tesseract;
 namespace Deck4Me
 {
 
@@ -1045,13 +1048,7 @@ namespace Deck4Me
 
         private void importToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenFileDialog fd = new OpenFileDialog();
-            fd.Filter = "deckFile|*.Deck";
-            fd.Title = "Import a Deck";
-            fd.InitialDirectory = Directory.GetParent(Application.StartupPath).Parent.FullName +@"\Sample .Deck files\" ;
-            fd.ShowDialog();
 
-            loadDeckWithFilePath(fd.FileName.ToString());
         }
 
         private void setSpeed(string spd)
@@ -1697,5 +1694,118 @@ namespace Deck4Me
             
 
         }
+
+        private void fromDeckFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fd = new OpenFileDialog();
+            fd.Filter = "deckFile|*.Deck";
+            fd.Title =  "Import a Deck";
+            fd.InitialDirectory = Directory.GetParent(Application.StartupPath).Parent.FullName + @"\Sample .Deck files\";
+            fd.ShowDialog();
+
+            loadDeckWithFilePath(fd.FileName.ToString());
+        }
+
+        private void fromDeckScreenshotToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fd = new OpenFileDialog();
+            fd.Filter = "Image files (*.jpg , *.jepg , *.png , *.bmp) | *.jpg; *.jepg; *.png; *.bmp";
+            fd.Title = "Import a Deck from Screenshot";
+            //fd.InitialDirectory = Directory.GetParent(Application.StartupPath).Parent.FullName + @"\Sample .Deck files\";
+            DialogResult res = fd.ShowDialog();
+
+            if (res != DialogResult.OK || !File.Exists(fd.FileName.ToString()))
+            {
+                return;
+            }
+
+            // Code usage sample
+            /* TEST CODE FOR Ocr
+            Ocr ocr = new Ocr();
+            using (Bitmap bmp = new Bitmap(fd.FileName.ToString()))
+            {
+                tessnet2.Tesseract tessocr = new tessnet2.Tesseract();
+                tessocr.Init(null, "eng", false);
+                tessocr.GetThresholdedImage(bmp, Rectangle.Empty).Save("c:\\temp\\" + Guid.NewGuid().ToString() + ".bmp");
+                // Tessdata directory must be in the directory than this exe
+                Console.WriteLine("Multithread version");
+                ocr.DoOCRMultiThred(bmp, "eng");
+                Console.WriteLine("Normal version");
+                ocr.DoOCRNormal(bmp, "eng");
+            }
+             */
+
+            //Test code for tesseract 3
+            var testImagePath = fd.FileName.ToString();
+
+            try
+            {
+                var logger = new FormattedConsoleLogger();
+                var resultPrinter = new ResultPrinter(logger);
+                using (var engine = new TesseractEngine(@"./tessdata", "eng", EngineMode.Default))
+                {
+                    using (var img = Pix.LoadFromFile(testImagePath))
+                    {
+                        using (logger.Begin("Process image"))
+                        {
+                            var i = 1;
+                            using (var page = engine.Process(img))
+                            {
+                                var text = page.GetText();
+                                logger.Log("Text: {0}", text);
+                                logger.Log("Mean confidence: {0}", page.GetMeanConfidence());
+
+                                using (var iter = page.GetIterator())
+                                {
+                                    iter.Begin();
+                                    do
+                                    {
+                                        if (i % 2 == 0)
+                                        {
+                                            using (logger.Begin("Line {0}", i))
+                                            {
+                                                do
+                                                {
+                                                    using (logger.Begin("Word Iteration"))
+                                                    {
+                                                        if (iter.IsAtBeginningOf(PageIteratorLevel.Block))
+                                                        {
+                                                            logger.Log("New block");
+                                                        }
+                                                        if (iter.IsAtBeginningOf(PageIteratorLevel.Para))
+                                                        {
+                                                            logger.Log("New paragraph");
+                                                        }
+                                                        if (iter.IsAtBeginningOf(PageIteratorLevel.TextLine))
+                                                        {
+                                                            logger.Log("New line");
+                                                        }
+                                                        logger.Log("word: " + iter.GetText(PageIteratorLevel.Word));
+                                                    }
+                                                } while (iter.Next(PageIteratorLevel.TextLine, PageIteratorLevel.Word));
+                                            }
+                                        }
+                                        i++;
+                                    } while (iter.Next(PageIteratorLevel.Para, PageIteratorLevel.TextLine));
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception tessE)
+            {
+                Trace.TraceError(tessE.ToString());
+                Console.WriteLine("Unexpected Error: " + tessE.Message);
+                Console.WriteLine("Details: ");
+                Console.WriteLine(tessE.ToString());
+            }
+            //Console.Write("Press any key to continue . . . ");
+            //Console.ReadKey(true);
+        }
+
+
+
     }
+   
 }

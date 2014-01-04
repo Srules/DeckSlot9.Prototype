@@ -56,6 +56,8 @@
             this.statusIcon = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.copyDeckListToClipboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fromDeckFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fromDeckScreenshotToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -112,7 +114,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(140, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(232, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -126,9 +128,11 @@
             // 
             // importToolStripMenuItem
             // 
+            this.importToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fromDeckFileToolStripMenuItem,
+            this.fromDeckScreenshotToolStripMenuItem});
             this.importToolStripMenuItem.Name = "importToolStripMenuItem";
-            this.importToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.importToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.importToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.importToolStripMenuItem.Text = "Import";
             this.importToolStripMenuItem.Click += new System.EventHandler(this.importToolStripMenuItem_Click);
             // 
@@ -249,10 +253,10 @@
             this.toolStripComboBox1,
             this.toolStripSeparator1,
             this.toolStripTextBox1});
-            this.toolStrip1.Location = new System.Drawing.Point(278, 1);
+            this.toolStrip1.Location = new System.Drawing.Point(309, 1);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip1.Size = new System.Drawing.Size(274, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(243, 25);
             this.toolStrip1.TabIndex = 9;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -317,6 +321,22 @@
             this.copyDeckListToClipboardToolStripMenuItem.Text = "Copy deck list to Clipboard";
             this.copyDeckListToClipboardToolStripMenuItem.Click += new System.EventHandler(this.copyDeckListToClipboardToolStripMenuItem_Click);
             // 
+            // fromDeckFileToolStripMenuItem
+            // 
+            this.fromDeckFileToolStripMenuItem.Name = "fromDeckFileToolStripMenuItem";
+            this.fromDeckFileToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
+            this.fromDeckFileToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.fromDeckFileToolStripMenuItem.Text = "From .Deck File";
+            this.fromDeckFileToolStripMenuItem.Click += new System.EventHandler(this.fromDeckFileToolStripMenuItem_Click);
+            // 
+            // fromDeckScreenshotToolStripMenuItem
+            // 
+            this.fromDeckScreenshotToolStripMenuItem.Name = "fromDeckScreenshotToolStripMenuItem";
+            this.fromDeckScreenshotToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F1)));
+            this.fromDeckScreenshotToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.fromDeckScreenshotToolStripMenuItem.Text = "From deck Screenshot";
+            this.fromDeckScreenshotToolStripMenuItem.Click += new System.EventHandler(this.fromDeckScreenshotToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AllowDrop = true;
@@ -376,6 +396,8 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.ToolStripMenuItem copyDeckListToClipboardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fromDeckFileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fromDeckScreenshotToolStripMenuItem;
     }
 }
 

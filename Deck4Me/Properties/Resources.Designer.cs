@@ -95,16 +95,16 @@ namespace Deck4Me.Properties {
         ///            margin-left: 34px;
         ///            padding-right: 0px;
         ///        }
-        ///    &lt;/style&gt;
-        ///&lt;/head&gt;
-        ///&lt;body&gt;
-        ///
-        ///    &lt;p&gt;
-        ///        DeckSlot 9 - Version 1.0&lt;/p&gt;
-        ///    &lt;h2&gt;Table of Contents&lt;/h2&gt;
-        ///    &lt;ol&gt;
-        ///        &lt;li&gt;&lt;a href=&quot;#a&quot;&gt;What is DeckSlot9&lt;/a&gt;&lt;/li&gt;
-        ///        &lt;li [rest of string was truncated]&quot;;.
+        ///        .auto-style2
+        ///        {
+        ///            font-weight: bold;
+        ///        }
+        ///        .auto-style3
+        ///        {
+        ///            font-weight: bold;
+        ///            height: 25px;
+        ///        }
+        ///        [rest of string was truncated]&quot;;.
         /// </summary>
         public static string DeckSlot9_Help {
             get {
